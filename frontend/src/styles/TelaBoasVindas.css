@@ -1,0 +1,95 @@
+.boas-vindas {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(circle at 50% 30%, #1d1d1d 0%, #101010 70%);
+  position: relative;
+  overflow: hidden;
+}
+
+.boas-vindas__trilho {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 10px;
+  background: repeating-linear-gradient(
+    -45deg,
+    #f5a623,
+    #f5a623 18px,
+    #141414 18px,
+    #141414 36px
+  );
+}
+
+.boas-vindas__trilho--inferior {
+  top: auto;
+  bottom: 0;
+}
+
+.boas-vindas__rodape {
+  position: absolute;
+  bottom: 18px;
+  left: 0;
+  right: 0;
+}
+
+.boas-vindas__conteudo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+  padding: 40px;
+  color: #f2f2f2;
+}
+
+.boas-vindas__logo {
+  color: #f2f2f2;
+  margin-bottom: 12px;
+}
+
+.boas-vindas__titulo {
+  font-family: "Rajdhani", "Inter", system-ui, sans-serif;
+  font-size: 34px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin: 0;
+  color: #ffffff;
+}
+
+.boas-vindas__texto {
+  max-width: 420px;
+  color: #b8b8b8;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.boas-vindas__botao {
+  margin-top: 12px;
+  padding: 16px 48px;
+  border: none;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #ffd23f, #f5a623);
+  color: #141414;
+  font-family: "Rajdhani", "Inter", system-ui, sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  cursor: pointer;
+  box-shadow: 0 8px 24px rgba(245, 166, 35, 0.35);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.boas-vindas__botao:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 28px rgba(245, 166, 35, 0.45);
+}
+
+.boas-vindas__botao:active {
+  transform: translateY(0);
+}

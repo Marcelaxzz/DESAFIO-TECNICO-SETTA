@@ -1,0 +1,16 @@
+.grafico-historico {
+  background: #1b1b1b;
+  border: 1px solid #2a2a2a;
+  border-radius: 16px;
+  padding: 20px 12px 8px;
+}
+
+.grafico-historico--vazio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 220px;
+  color: #8a8a8a;
+  padding: 20px;
+  text-align: center;
+}

@@ -1,0 +1,92 @@
+.cartao-atual {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  background: #1b1b1b;
+  border: 1px solid #2a2a2a;
+  border-radius: 16px;
+  padding: 28px 32px;
+  position: relative;
+  transition: opacity 0.2s ease;
+}
+
+.cartao-atual--carregando {
+  opacity: 0.6;
+}
+
+.cartao-atual--vazio {
+  color: #a0a0a0;
+  justify-content: center;
+  text-align: center;
+  padding: 40px;
+}
+
+.cartao-atual__bloco {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.cartao-atual__rotulo {
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #8a8a8a;
+}
+
+.cartao-atual__valor {
+  font-family: "Rajdhani", "Inter", system-ui, sans-serif;
+  font-size: 42px;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1;
+}
+
+.cartao-atual__divisor {
+  width: 1px;
+  align-self: stretch;
+  background: #2a2a2a;
+}
+
+.cartao-atual__status {
+  margin-left: auto;
+  padding: 8px 18px;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+}
+
+.cartao-status--normal {
+  background: rgba(66, 194, 118, 0.15);
+  color: #4ecb85;
+}
+
+.cartao-status--atencao {
+  background: rgba(245, 166, 35, 0.18);
+  color: #f5a623;
+}
+
+.cartao-status--critico {
+  background: rgba(224, 63, 63, 0.18);
+  color: #e85c5c;
+}
+
+.cartao-atual__data {
+  position: absolute;
+  bottom: 10px;
+  right: 32px;
+  font-size: 12px;
+  color: #6f6f6f;
+}
+
+@media (max-width: 640px) {
+  .cartao-atual {
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .cartao-atual__status {
+    margin-left: 0;
+  }
+}

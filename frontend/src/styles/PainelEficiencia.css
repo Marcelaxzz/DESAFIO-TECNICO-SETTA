@@ -1,0 +1,102 @@
+.painel {
+  min-height: 100vh;
+  background: #101010;
+  color: #f2f2f2;
+}
+
+.painel__cabecalho {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 32px;
+  border-bottom: 1px solid #232323;
+  background: #141414;
+}
+
+.painel__marca {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.painel__logo {
+  color: #f2f2f2;
+}
+
+.painel__botao-voltar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border: none;
+  border-radius: 999px;
+  background: transparent;
+  color: #f5a623;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.painel__botao-voltar:hover {
+  background: rgba(245, 166, 35, 0.12);
+}
+
+.painel__acoes {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.painel__toggle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: #b8b8b8;
+  cursor: pointer;
+  user-select: none;
+}
+
+.painel__toggle input {
+  accent-color: #f5a623;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+.painel__botao-atualizar {
+  padding: 10px 22px;
+  border: none;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #ffd23f, #f5a623);
+  color: #141414;
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: opacity 0.15s ease;
+}
+
+.painel__botao-atualizar:disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+
+.painel__corpo {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 32px 24px 64px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.painel__secao h2 {
+  font-family: "Rajdhani", "Inter", system-ui, sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #d8d8d8;
+  margin: 0 0 12px;
+}
